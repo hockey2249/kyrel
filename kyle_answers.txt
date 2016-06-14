@@ -45,3 +45,93 @@ function main(n) {
   //////////////////////////////////
 
 } // END MAIN
+
+Day #2 - Kyrel Answers 
+
+Question #1 
+
+var initial_state = [ 'b', 'b', 'b', 'b', 'b' ];
+
+function main(n) {
+
+  //////////////////////////////////
+  ////                          ////
+  //// v YOUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+
+  moveRight();
+  erase();
+  moveRight();
+  moveRight();
+  erase();
+  erase();
+
+  //////////////////////////////////
+  ////                          ////
+  //// ^ YOUR CODE ABOVE HERE ^ ////
+  ////                          ////
+  //////////////////////////////////
+
+} // END MAIN
+
+Question #2 
+
+var initial_state = [ 'g', 'g', 'g', '.', '.' ];
+
+function main(n) {
+
+  //////////////////////////////////
+  ////                          ////
+  //// v YOUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+
+  moveRight();
+  useBlue();
+  draw();
+  moveRight();
+  moveRight();
+  useBlue();
+  draw();
+  moveRight();
+
+
+  //////////////////////////////////
+  ////                          ////
+  //// ^ YOUR CODE ABOVE HERE ^ ////
+  ////                          ////
+  //////////////////////////////////
+
+} // END MAIN
+
+Question #3
+
+var initial_state = [ 'b', '.', '.', '.', '.' ];
+
+function main(n) {
+
+  //////////////////////////////////
+  ////                          ////
+  //// v YOUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+
+  erase();
+  moveRight();
+  moveRight();
+  moveRight();
+  moveRight();
+  useBlue();
+  draw();
+
+  //////////////////////////////////
+  ////                          ////
+  //// ^ YOUR CODE ABOVE HERE ^ ////
+  ////                          ////
+  //////////////////////////////////
+
+} // END MAIN
+
+
+
