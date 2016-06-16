@@ -19,7 +19,7 @@ var row, colors, kyrel, return_value, rando;
     'g' => green
 */
 
-var initial_state = [ 'b', '.', '.', '.', '.' ];
+var initial_state = [ '.', '.', '.', '.', '.' ];
 
 function main(n) {
 
@@ -29,13 +29,13 @@ function main(n) {
   ////                          ////
   //////////////////////////////////
 
-  erase();
-  moveRight();
-  moveRight();
-  moveRight();
-  moveRight();
-  useBlue();
+var n = 3; 
+
+useGreen();
+for(var i=0; i<n; i++) {
   draw();
+  moveRight();
+}
 
   //////////////////////////////////
   ////                          ////
