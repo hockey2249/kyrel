@@ -19,8 +19,8 @@ var row, colors, kyrel, return_value, rando;
     'g' => green
 */
 
-var initial_state = [ '.', '.', '.', '.', '.' ];
-
+var initial_state = ['b', 'g', 'g', '.', 'g']
+//          finish: ['g', '.', 'g', 'g', 'b']
 function main(n) {
 
   //////////////////////////////////
@@ -28,14 +28,31 @@ function main(n) {
   //// v YOUR CODE BELOW HERE v ////
   ////                          ////
   //////////////////////////////////
+  var newArray = [];
+  for (var i=0; i < initial_state.length; i++){
+    if ( onBlue()){
+      newArray[i] = 'b';
+    } else if (onGreen()){
+      newArray[i] = 'g';
+          } else {
+            newArray[i] = ' . ';
+          }
+          moveRight();
+  } for (var i=0; i < initial_state.length; i++){
+    if(newArray[i] === 'b') {
+        useBlue();
+        draw();
+    } else if(newArray[i] === 'g') {
+        useGreen();
+        draw();
+    } else{
+      erase();
+    }
+ moveLeft();
+  }
 
-var n = 3; 
 
-useGreen();
-for(var i=0; i<n; i++) {
-  draw();
-  moveRight();
-}
+
 
   //////////////////////////////////
   ////                          ////
