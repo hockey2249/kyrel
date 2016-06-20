@@ -19,8 +19,13 @@ var row, colors, kyrel, return_value, rando;
     'g' => green
 */
 
-var initial_state = ['b', 'g', 'g', '.', 'g']
-//          finish: ['g', '.', 'g', 'g', 'b']
+var initial_state = ['g', 'b', 'b', '.', '.'];
+//     
+  //////////////////////////////////
+  ////                          ////
+  //// v YOUR CODE BELOW HERE v ////
+  ////                          ////
+        
 function main(n) {
 
   //////////////////////////////////
@@ -28,39 +33,30 @@ function main(n) {
   //// v YOUR CODE BELOW HERE v ////
   ////                          ////
   //////////////////////////////////
-  var newArray = [];
-  for (var i=0; i < initial_state.length; i++){
-    if ( onBlue()){
-      newArray[i] = 'b';
-    } else if (onGreen()){
-      newArray[i] = 'g';
-          } else {
-            newArray[i] = ' . ';
-          }
-          moveRight();
-  } for (var i=0; i < initial_state.length; i++){
-    if(newArray[i] === 'b') {
-        useBlue();
-        draw();
-    } else if(newArray[i] === 'g') {
-        useGreen();
-        draw();
-    } else{
+        
+
+  for(var i=0; i<5; i++) {
+    if( onBlue() ) {
+      moveLeft();
       erase();
-    }
- moveLeft();
+      moveRight();
   }
 
-
-
-
+  moveRight();
+}
+}
   //////////////////////////////////
   ////                          ////
   //// ^ YOUR CODE ABOVE HERE ^ ////
   ////                          ////
   //////////////////////////////////
-
-} // END MAIN
+ // END MAIN
+  //////////////////////////////////
+  ////                          ////
+  //// ^ YOUR CODE ABOVE HERE ^ ////
+  ////                          ////
+  //////////////////////////////////
+ // END MAIN
 
 
 

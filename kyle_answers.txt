@@ -400,4 +400,123 @@ function main(n) {
 
 } // END MAIN
 
+_________________________________________________________________________________________
+
+Question #1 
+
+
+var initial_state = ['.', '.', 'b', '.', '.'];
+//          
+function main(n) {
+
+  //////////////////////////////////
+  ////                          ////
+  //// v YOUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+  for(var i=0; i<5; i++) {
+    if( onBlue() ) {
+    erase();
+    moveRight();
+    useBlue();
+    draw();
+  }
+
+  moveRight();
+}
+}
+__________________________________________________________________________________________
+
+Question #2 
+
+var initial_state = ['g', 'b', 'b', '.', '.'];
+//        
+function main(n) {
+
+  //////////////////////////////////
+  ////                          ////
+  //// v YOUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+  for(var i=0; i<5; i++) {
+    if( onBlue() ) {
+      moveLeft();
+      erase();
+      moveRight();
+      draw();
+  }
+
+  moveRight();
+}
+}
+  //////////////////////////////////
+  ////                          ////
+  //// ^ YOUR CODE ABOVE HERE ^ ////
+  ////                          ////
+  //////////////////////////////////
+ // END MAIN
+
+Question #3
+
+var initial_state = ['b', '.', 'b', '.', '.'];
+//        
+function main(n) {
+
+  //////////////////////////////////
+  ////                          ////
+  //// v YOUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+  for(var i=0; i<5; i++) {
+    if( onBlue() ) {
+      erase();
+      moveRight();
+      moveRight();
+      erase();
+      moveRight();
+      draw();
+      moveRight();
+      draw();
+  }
+  moveRight();
+
+}
+}
+
+Question #4
+
+
+var initial_state = ['.', 'b', 'b', '.', 'b'];
+//        
+function main(n) {
+
+  //////////////////////////////////
+  ////                          ////
+  //// v YOUR CODE BELOW HERE v ////
+  ////                          ////
+  //////////////////////////////////
+
+var numBlues = 0;
+useBlue();
+
+for(var j = 0; j < 5; j++) {
+  if(onBlue()) {
+    numBlues = numBlues + 1;
+  }
+  draw();
+  moveRight();
+}
+for(var i = 0; i < (5 - numBlues); i++) {
+  erase();
+  moveLeft();
+}
+}
+  //////////////////////////////////
+  ////                          ////
+  //// ^ YOUR CODE ABOVE HERE ^ ////
+  ////                          ////
+  //////////////////////////////////
+ // END MAIN
+
+__________________________________________________________________________________________
 
